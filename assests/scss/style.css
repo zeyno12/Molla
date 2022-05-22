@@ -1,0 +1,125 @@
+#navbar {
+  padding: 20px;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+#navbar .header-left img {
+  width: 30%;
+  cursor: pointer;
+}
+
+#navbar .header-center {
+  position: relative;
+}
+
+#navbar .header-center input {
+  width: 100%;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar .header-center button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: none;
+  background-color: inherit;
+}
+
+#navbar .header-center:hover button svg {
+  color: yellowgreen;
+}
+
+#navbar .header-right {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar .header-right span {
+  font-size: 12px;
+}
+
+#navbar .header-right .z-indx {
+  position: relative;
+  z-index: +1;
+}
+
+#navbar .header-right .z-indx p {
+  position: absolute;
+  background-color: yellowgreen;
+  border-radius: 50%;
+  width: 20px;
+  font-size: small;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  color: white;
+}
+
+#navbar .header-right:hover svg {
+  color: yellowgreen;
+}
+
+#lists .lists-category {
+  display: none;
+}
+
+#lists .lists-category li {
+  list-style-type: none;
+  list-style: none;
+  border: 1px solid;
+}
+
+#lists:hover .lists-category {
+  display: block;
+}
+
+#lists .col-list {
+  padding: 0;
+}
+
+#lists .col-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#lists .col-list ul li {
+  list-style-type: none;
+}
+
+#lists .col-list ul a {
+  text-decoration: none;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
