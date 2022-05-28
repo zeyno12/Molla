@@ -1,3 +1,8 @@
+#general {
+  width: 90%;
+  margin: 0  5%;
+}
+
 #navbar {
   padding: 20px;
   border-bottom: 1px solid #a0a0a0;
@@ -50,6 +55,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50%;
+  margin-left: 50%;
 }
 
 #navbar .header-right span {
@@ -73,26 +80,69 @@
   color: white;
 }
 
-#navbar .header-right:hover svg {
+#navbar .header-right .icon1 svg:hover {
   color: yellowgreen;
 }
 
-#lists .lists-category {
+#lists {
+  padding: 8px;
+}
+
+#lists .first-col {
+  position: relative;
+  z-index: +1;
+}
+
+#lists .first-col .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#lists .first-col .category span {
+  padding-left: 10px;
+}
+
+#lists .first-col .lists-category {
+  position: absolute;
+  width: 100%;
+}
+
+#lists .first-col .lists-category ul {
+  padding: 0;
   display: none;
+  width: 100%;
 }
 
-#lists .lists-category li {
-  list-style-type: none;
+#lists .first-col .lists-category li {
   list-style: none;
-  border: 1px solid;
+  border: 1px solid #bfbfbf;
+  padding: 8px;
+  background-color: white;
+  cursor: pointer;
 }
 
-#lists:hover .lists-category {
-  display: block;
+#lists .first-col:hover .category {
+  background-color: yellowgreen;
+  padding: 8px;
+}
+
+#lists .first-col:hover .lists-category ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #lists .col-list {
   padding: 0;
+  border-left: 1px solid gray;
 }
 
 #lists .col-list ul {
@@ -109,10 +159,136 @@
 
 #lists .col-list ul li {
   list-style-type: none;
+  font-size: small;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
 }
 
 #lists .col-list ul a {
   text-decoration: none;
+}
+
+#lists .col-list li:hover, #lists .lists-category li:hover {
+  color: yellowgreen;
+}
+
+#lists .lampa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20%;
+  border-left: 1px solid gray;
+}
+
+#lists .lampa .grayword span {
+  color: gray;
+}
+
+.big-text {
+  position: relative;
+}
+
+.big-text .bg-img img {
+  width: 100%;
+  height: 200px;
+}
+
+.big-text .h1-text {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.big-text .h1-text p {
+  text-align: center;
+  color: yellowgreen;
+}
+
+.mini-text {
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.mini-text span, .mini-text svg {
+  font-size: small;
+  cursor: pointer;
+}
+
+.mini-text span:hover {
+  color: yellowgreen;
+}
+
+.col3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 10px 0 10px 0;
+}
+
+#col-3 .con-img {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#col-3 .con-img img {
+  width: 100%;
+  height: 300px;
+}
+
+#col-3 .con-img .img-1 {
+  position: absolute;
+  opacity: 1;
+}
+
+#col-3 .con-img .img-2 {
+  opacity: 0;
+}
+
+#col-3 .con-img:hover .img-1 {
+  opacity: 0;
+}
+
+#col-3 .con-img:hover .img-2 {
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#col-3 .con-img .hidden {
+  overflow: hidden;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.743);
+  width: 100%;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  height: 25px;
+  top: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+#col-3 .con-img .hidden .icon-1 {
+  padding: 8px;
+}
+
+#col-3 .con-img .hidden .icon-3 {
+  background-color: rgba(0, 0, 0, 0.329);
 }
 
 *, *::after, *::before {
